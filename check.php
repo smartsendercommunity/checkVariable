@@ -21,9 +21,9 @@ if ($_GET == NULL) {
 }
 foreach ($_GET as $key => $value) {
   if ($value == NULL) {
-    $result[$key]["present"] = true;
-  } else {
     $result[$key]["present"] = false;
+  } else {
+    $result[$key]["present"] = true;
   }
   try {
     $result[$key]["length"] = mb_strlen($value);
